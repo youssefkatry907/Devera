@@ -27,6 +27,10 @@ app.use(session({ secret: "devera" }));
 require("./db");
 app.use(require("../routes/user.routes"));
 
+app.get("/",(req,res)=>{
+    res.send("server is running");
+})
+
 //Cors Configuration
 app.use(async (req, res, next) => {
     res.locals.session = req.session;
