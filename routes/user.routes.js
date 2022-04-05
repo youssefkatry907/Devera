@@ -12,22 +12,22 @@ app.patch("/addSkills", userController.addSkills);
 app.delete("/removeSkills", userController.removeSkills);
 app.patch("/addExperience", userController.addExperience);
 app.delete("/removeExperience", userController.removeExperience);
-app.post("/joinGroupRequest", userController.joinGroupRequest); // KATRY
-app.get("/getAllJoinGroupRequests", userController.getAllJoinGroupRequests); //KATRY
-app.delete("/leaveGroup", userController.leaveGroup); // KATRY
-app.delete("/cancelJoinGroupRequest", userController.cancelJoinGroupRequest); // KATRY
+app.post("/joinGroupRequest", userController.joinGroupRequest); 
+app.get("/getAllJoinGroupRequests", userController.getAllJoinGroupRequests); 
+app.delete("/leaveGroup", userController.leaveGroup); 
+app.delete("/cancelJoinGroupRequest", userController.cancelJoinGroupRequest); 
 app.post("/sendConnectionRequest", userController.sendConnectionRequest);
 app.post("/acceptConnectionRequest", userController.acceptConnectionRequest);
 app.delete("/denyConnectionRequest", userController.denyConnectionRequest);
 app.get("/getAllConnectionRequests", userController.getAllConnectionRequests);
 app.get("/getAllSentConnectionRequests", userController.getAllSentConnectionRequests);
 app.delete("/removeSentConnectionRequest", userController.removeSentConnectionRequest);
-app.post("/sendEmailToGenerateRecoveryCode", userController.sendEmailToGenerateRecoveryCode); //KATRY
-app.post("/verifyRecoveryCode", userController.verifyRecoveryCode); //KATRY
-app.patch("/resetPassword", userController.resetPassword); //KATRY
-app.patch("/updatePassword", userController.updatePassword); //KATRY
-app.patch("/editProfile", userController.editProfile); //KATRY
-app.get("/profilePage", userController.profilePage); //KATRY
+app.post("/sendEmailToGenerateRecoveryCode", userController.sendEmailToGenerateRecoveryCode); 
+app.post("/verifyRecoveryCode", userController.verifyRecoveryCode); 
+app.patch("/resetPassword", userController.resetPassword);
+app.patch("/updatePassword", userController.updatePassword);
+app.patch("/editProfile", userController.editProfile); 
+app.get("/profilePage", userController.profilePage); 
 
 
 module.exports = app
